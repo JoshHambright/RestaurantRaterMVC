@@ -30,12 +30,13 @@
         @Html.DisplayFor(modelItem => item.Name)
     </td>
     <td>
-        @Html.DisplayNameFor(model => model.Address)
+        @Html.DisplayFor(modelItem => item.Address)
     </td>
     <td>
-        @Html.DisplayNameFor(model => model.Rating)
+        @Html.DisplayFor(modelItem => item.Rating)
     </td>
     <td>
+        |
         @Html.ActionLink("Change", "Edit", new { id = item.RestaurantID }) |
         @Html.ActionLink("More Info", "Details", new { id = item.RestaurantID }) |
         @Html.ActionLink("Remove", "Delete", new { id = item.RestaurantID }) |
